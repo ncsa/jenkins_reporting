@@ -8,6 +8,8 @@ import os
 import sys
 import tempfile
 import pandas as pd
+import matplotlib
+matplotlib.use("PDF")
 import matplotlib.pyplot as plt
 
 tmp_pdf_file = tempfile.NamedTemporaryFile().name
