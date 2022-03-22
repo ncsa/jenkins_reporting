@@ -1,6 +1,0 @@
-Files in this repo can be used with the Jenkins test data under /var/lib/jenkins/jobs/  (typically) and generate summary or individual reports for a test(s).
-
-The first example script generates a plot from the .csv file(s) in a test/ directory.
-
-Requirements:  X11 , Imagemagick loaded in the environment (display a pdf )
-usage: jtest_csv_report.py <filename.csv>
