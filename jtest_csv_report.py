@@ -10,6 +10,7 @@ import tempfile
 import pandas as pd
 import matplotlib
 matplotlib.use("PDF")
+#matplotlib.use("SVG")
 import matplotlib.pyplot as plt
 
 tmp_pdf_file = tempfile.NamedTemporaryFile().name
@@ -24,5 +25,6 @@ print(jenkinsdata.head())
 jenkinsdata["Value"].plot()
 
 plt.savefig(tmp_pdf_file ,format="pdf")
+#plt.savefig(tmp_pdf_file ,format="svg")
 os.system("display " + tmp_pdf_file)
 os.unlink(tmp_pdf_file)
